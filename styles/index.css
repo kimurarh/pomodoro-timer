@@ -32,10 +32,10 @@ h1 {
 }
 
 .container .box .menu {
-    margin: 10px 0;
+    display: flex;
 }
 
-.container .box .menu button {
+.container .box .menu button.main-buttons {
     background-color: #393939;
     border: none;
     border-radius: 8px;
@@ -46,6 +46,7 @@ h1 {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    width: 150px;
 }
 
 .container .box h2 {
@@ -57,17 +58,57 @@ h1 {
 .container .box .menu #new-task {
     background-color: #595959;
     border: none;
-    border-radius: 8px 0 0 8px;
+    border-radius: 6px 0 0 6px;
     color: white;
     height: 24px;
-    margin: none;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 0;
+    width: 250px;
 }
 
-.container .box .menu #new-task-button {
+.container .box .menu button#new-task-button {
     background-color: #393939;
     border: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 6px 6px 0;
     color: white;
-    height: 24px;
-    margin: none;
-} 
+    height: 26px;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    width: 50px;
+}
+
+.container .box #task-box {
+    margin: 8px 0;
+}
+
+.container .box #task-box .task{
+    background-color: #393939;
+    padding: 4px;
+    margin: 8px 0;
+    border-radius: 6px;
+    width: 310px;
+    text-align: center;
+    padding: 16px 0;
+    position: relative;
+}
+
+.container .box #task-box .task.done {
+    background-color: #2ECC40;
+    color: black;
+}
+
+.container .box #task-box .task .close-icon {
+    background-color: #FF4136;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.container .box #task-box .task .close-icon:hover {
+    background-color: crimson;
+}

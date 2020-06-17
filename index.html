@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="styles/index.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Pomodoro Timer</title>
 </head>
 
@@ -18,11 +20,11 @@
         </div>
 
         <div class="box">
-            <h1>25:00</h1>
+            <h1 id="timer">25:00</span></h1>
             <div class="menu">
-                <button>Start/Stop</button>
-                <button>Short Break</button>
-                <button>Long Break</button>
+                <button class="main-buttons" onclick="loadConfig(5)">Short Break</button>
+                <button class="main-buttons" onclick="loadConfig(25)">Focus Time</button>
+                <button class="main-buttons" onclick="loadConfig(20)">Long Break</button>
             </div>
         </div>
 
@@ -30,7 +32,11 @@
             <h2>To-Do List</h2>
             <div class="menu">
                 <input type="text" name="add" id="new-task" placeholder="new task">
-                <input type="button" value="+" id="new-task-button">
+                <button id="new-task-button" onclick="addNewTask()">+</button>
+            </div> 
+
+            <div id="task-box">
+
             </div> 
         </div>
 
@@ -38,6 +44,8 @@
         
         </div>
     </div>   
+    
+    <script type="text/javascript" src="scripts/task-box.js"></script>
 
 </body>
 </html>
