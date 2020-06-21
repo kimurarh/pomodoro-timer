@@ -9,4 +9,15 @@ The Pomodoro Technique is a time management method which centers around timing y
 
 The benefits of the Pomodoro Technique come from the frequent breaks, which help your mind stay fresh. 
 
-## 
+## Project
+This WebApp is a simple implementation of the traditional Pomodoro Technique.
+
+Additionally, there's a To-Do List that allow users to keep track of their objectives.
+
+![Screenshot](../assets/screenshot.png?raw=true)
+
+[Preview](https://kimurarh.github.io/pomodoro-timer/)
+
+## Future changes
+* Let the user change how long each interval lasts.
+
