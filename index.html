@@ -16,35 +16,34 @@
 
     <div class="container">
         <div id="title">
-            <h2>Pomodoro Timer</h2>
+            <h2 class="color-change">Pomodoro Timer</h2>
         </div>
 
         <div class="box">
-            <h1 id="timer">25:00</span></h1>
+            <h1 id="timer" class="color-change">25:00</span></h1>
             <div class="menu">
-                <button class="main-buttons" onclick="loadConfig(5)">Short Break</button>
-                <button class="main-buttons" onclick="loadConfig(25)">Focus Time</button>
-                <button class="main-buttons" onclick="loadConfig(20)">Long Break</button>
+                <button id="pause-button">||</button>
+            </div>
+            <div class="menu">
+                <button class="main-buttons" id="short-break-bt">Short Break</button>
+                <button class="main-buttons" id="focus-time-bt">Focus Time</button>
+                <button class="main-buttons" id="long-break-bt">Long Break</button>
             </div>
         </div>
 
         <div class="box">
-            <h2>To-Do List</h2>
+            <h2 class="color-change">To-Do List</h2>
             <div class="menu">
                 <input type="text" name="add" id="new-task" placeholder="new task">
-                <button id="new-task-button" onclick="addNewTask()">+</button>
+                <button id="new-task-button">+</button>
             </div> 
 
             <div id="task-box">
-
+                <!-- Where new tasks will be added-->
             </div> 
         </div>
-
-        <div id="footer">
-        
-        </div>
     </div>   
-    
+
     <script type="text/javascript" src="scripts/task-box.js"></script>
 
 </body>
