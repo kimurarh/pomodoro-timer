@@ -54,7 +54,7 @@ h1 {
     border-radius: 50%;
     color: white;
     font-weight: bold;
-    padding: 12px;
+    padding: 10px;
     margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@ h1 {
     background-color: var(--button-light);
 }
 
-.container .box .menu button.main-buttons {
+.container .box .main-menu button.main-buttons {
     background-color: var(--button-color);
     border: none;
     border-radius: 8px;

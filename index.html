@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -22,9 +23,13 @@
         <div class="box">
             <h1 id="timer" class="color-change">25:00</span></h1>
             <div class="menu">
-                <button id="pause-button">||</button>
+                <div id="pause-button">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-pause" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                </div>
             </div>
-            <div class="menu">
+            <div class="main-menu">
                 <button class="main-buttons" id="short-break-bt">Short Break</button>
                 <button class="main-buttons" id="focus-time-bt">Focus Time</button>
                 <button class="main-buttons" id="long-break-bt">Long Break</button>

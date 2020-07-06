@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .container .box .main-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .box .main-menu button.main-buttons {
+        margin-bottom: 10px;
+    }
+}
